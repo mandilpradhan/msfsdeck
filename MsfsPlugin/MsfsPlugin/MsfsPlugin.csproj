@@ -230,9 +230,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\availableBorder.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Microsoft.FlightSimulator.SimConnect.dll" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <PostBuildEvent>$(ILMergeConsolePath) /out:$(OutDir)/bin/win/MSFSPlugin.dll $(OutDir)MSFSPlugin.dll $(OutDir)fsuipcClient.dll</PostBuildEvent>
